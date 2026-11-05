@@ -1,23 +1,3 @@
-"""
-Part D - Tool-using refund support agent.
-
-Run from the repository root:
-    python part_d/refund_agent.py
-
-Reads:
-    data/database/instamart.db
-    data/policies/*.txt
-    data/raw/agent_scenarios.csv
-
-Writes:
-    data/processed/part_d/refund_agent_results.csv
-    data/processed/part_d/refund_agent_metrics.json
-
-The supplied mock_llm.py drives the agent's tool-call sequence. All actions
-are simulated locally; this script does not contact a payment provider or
-issue a real refund.
-"""
-
 import csv
 import json
 import sqlite3
