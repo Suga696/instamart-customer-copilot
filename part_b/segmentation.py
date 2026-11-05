@@ -1,34 +1,3 @@
-"""
-Part B - Customer segmentation.
-
-Run from the repository root:
-    python part_b/segmentation.py
-
-Input:
-    data/processed/part_b/customer_features.csv
-
-Expected input:
-    One row per customer, including a customer_id column and numeric
-    customer-behaviour features created by feature_engineering.py.
-
-Outputs:
-    data/processed/part_b/customer_segments.csv
-    data/processed/part_b/segmentation_metrics.json
-    models/part_b/kmeans_segmentation.joblib
-
-The script:
-- excludes identifiers and likely target/label columns from clustering;
-- imputes missing numeric feature values with the median;
-- standardizes numeric features;
-- tests KMeans cluster counts from 2 to 6 (subject to dataset size);
-- selects the candidate with the best silhouette score;
-- saves cluster assignments and a basic segment profile.
-
-Do not interpret the numeric cluster labels as an ordered ranking.
-Confirm the assignment's exact clustering requirements/checkpoints before
-treating the default K range or model settings as final.
-"""
-
 import json
 from pathlib import Path
 
