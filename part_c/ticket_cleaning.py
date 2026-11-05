@@ -1,23 +1,3 @@
-"""
-Part C - Ticket cleaning
-------------------------
-Cleans the raw support-ticket export before PII masking and classification.
-
-Input:
-    data/raw/tickets.csv
-
-Outputs:
-    data/processed/part_c/cleaned_tickets.csv
-    data/processed/part_c/ticket_cleaning_report.json
-
-Important:
-- The supplied raw CSV is never modified.
-- Empty ticket descriptions are retained so the classification/routing stage
-  can handle them according to the assignment rules.
-- Long descriptions are not truncated.
-- This module does not call the mock LLM.
-"""
-
 from __future__ import annotations
 
 import json
