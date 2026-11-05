@@ -1,24 +1,3 @@
-"""
-Part C - Ticket routing
-----------------------
-Joins classified tickets with Part B customer cluster assignments and applies
-the routing/SLA rules supported by the supplied project policy text.
-
-Inputs:
-    data/processed/part_c/classified_tickets.csv
-    data/processed/part_b/customer_segments.csv
-
-Outputs:
-    data/processed/part_c/routed_tickets.csv
-    data/processed/part_c/routing_report.json
-
-Important segment note:
-Part B currently creates numeric KMeans cluster labels (0, 1, ...). These
-numbers are arbitrary and must NOT be treated as Premium/Regular labels.
-Set PREMIUM_CLUSTER_IDS only after the assignment brief or segment profile
-explicitly identifies which cluster represents Premium customers.
-"""
-
 from __future__ import annotations
 
 import json
