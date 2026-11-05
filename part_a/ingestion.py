@@ -1,14 +1,3 @@
-"""
-Part A - Raw data ingestion and initial profiling.
-
-Run this script from the repository root:
-    python part_a/ingestion.py
-
-This script reads the generated CSV and policy files, checks their expected
-columns, prints a basic quality profile, and writes a JSON ingestion report.
-It does not modify or clean the original raw files.
-"""
-
 import json
 from pathlib import Path
 
