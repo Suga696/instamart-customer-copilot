@@ -1,6 +1,3 @@
-"""
-Part A - Build the Instamart analytical SQLite database.
-
 Run from the repository root, after cleaning.py and validation.py:
     python part_a/database.py
 
