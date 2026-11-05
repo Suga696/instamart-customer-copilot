@@ -1,22 +1,3 @@
-"""
-Part D - Policy document retrieval and grounded Q&A.
-
-Run from the repository root:
-    python part_d/policy_retrieval.py
-
-Reads:
-    data/policies/*.txt
-    data/raw/policy_eval.csv
-
-Writes:
-    data/processed/part_d/policy_answers.csv
-    data/processed/part_d/policy_evaluation.json
-
-Uses the supplied, unchanged mock_llm.py in POLICY ASSISTANT mode.
-Only retrieved policy text is sent to the mock language model. Questions
-with no meaningful policy match are answered with an explicit abstention.
-"""
-
 import csv
 import json
 import re
