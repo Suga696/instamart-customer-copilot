@@ -1,20 +1,3 @@
-"""
-Part C - PII masking
---------------------
-Masks email addresses and phone numbers in cleaned support-ticket text.
-
-Input:
-    data/processed/part_c/cleaned_tickets.csv
-
-Outputs:
-    data/processed/part_c/pii_masked_tickets.csv
-    data/processed/part_c/pii_masking_report.json
-
-Only the free-text ticket description is masked. Ticket, customer and order
-IDs remain unchanged because downstream processing may need them for joins
-and routing. The original raw and cleaned files are never modified.
-"""
-
 from __future__ import annotations
 
 import json
