@@ -1,20 +1,3 @@
-"""
-Part C - Support ticket classification
---------------------------------------
-Classifies PII-masked ticket descriptions with the supplied offline mock_llm.py.
-
-Input:
-    data/processed/part_c/pii_masked_tickets.csv
-
-Outputs:
-    data/processed/part_c/classified_tickets.csv
-    data/processed/part_c/classification_report.json
-
-The supplied mock_llm.py is imported from the repository root and is never
-modified. Empty descriptions are retained with an explicit "unclassified"
-result. Long descriptions are sent without truncation.
-"""
-
 from __future__ import annotations
 
 import json
