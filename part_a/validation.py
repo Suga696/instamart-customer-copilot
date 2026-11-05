@@ -1,22 +1,3 @@
-"""
-Part A - Validation of cleaned Instamart datasets.
-
-Run from the repository root, after cleaning.py:
-    python part_a/validation.py
-
-Reads:
-    data/processed/customers_clean.csv
-    data/processed/products_clean.csv
-    data/processed/orders_clean.csv
-
-Writes:
-    data/processed/validation_report.json
-
-This script checks schemas, key uniqueness, data types/business rules,
-referential integrity, and missing values. Expected missing values created
-by the cleaning step are reported, not automatically treated as failures.
-"""
-
 import json
 from pathlib import Path
 
