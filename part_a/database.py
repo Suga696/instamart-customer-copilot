@@ -1,20 +1,3 @@
-Run from the repository root, after cleaning.py and validation.py:
-    python part_a/database.py
-
-Reads cleaned CSV files from data/processed/ and creates:
-    data/database/instamart.db
-
-Tables:
-    customers
-    products
-    orders
-
-Also creates:
-    v_orders_detail - a view joining orders with customer and product details.
-
-The script recreates the database on each run so that results are reproducible.
-"""
-
 import csv
 import sqlite3
 from pathlib import Path
