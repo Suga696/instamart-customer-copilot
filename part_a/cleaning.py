@@ -1,35 +1,3 @@
-"""
-Part A - Data cleaning for the Instamart capstone.
-
-Run from the repository root:
-    python part_a/cleaning.py
-
-Inputs:
-    data/raw/customers.csv
-    data/raw/products.csv
-    data/raw/orders.csv
-
-Outputs:
-    data/processed/customers_clean.csv
-    data/processed/products_clean.csv
-    data/processed/orders_clean.csv
-    data/processed/cleaning_report.json
-
-The raw source CSV files are never overwritten.
-
-Cleaning decisions:
-- Standardize customer city and gender values.
-- Convert impossible customer ages (outside 18-100) to missing values.
-- Convert numeric fields safely; unparseable values become missing.
-- Remove exact duplicate order rows.
-- For repeated order IDs, prefer a completed/cancelled record over an
-  earlier pending record. If records have the same status priority, keep
-  the record with the latest order timestamp.
-- Convert negative delivery durations and out-of-range discounts to missing.
-- Preserve rows with missing values so that data loss is visible and can be
-  handled explicitly in later analysis.
-"""
-
 import json
 from pathlib import Path
 
