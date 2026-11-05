@@ -1,29 +1,3 @@
-"""
-Part B - Customer churn prediction.
-
-Run from the repository root:
-    python part_b/churn_prediction.py
-
-Input:
-    data/processed/part_b/customer_features.csv
-
-Required input columns:
-    customer_id
-    churn
-
-The 'churn' column must be a ground-truth target label created according to
-the exact churn definition in the assignment. This script deliberately does
-not invent a churn definition from order inactivity.
-
-Outputs:
-    data/processed/part_b/churn_predictions.csv
-    data/processed/part_b/churn_model_metrics.json
-    models/part_b/churn_prediction.joblib
-
-Only numeric customer-behaviour features are used by this baseline model.
-Customer IDs and target/label columns are excluded from model inputs.
-"""
-
 import json
 from pathlib import Path
 
