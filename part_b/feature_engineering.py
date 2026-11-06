@@ -1,24 +1,3 @@
-"""
-Part B - Customer feature engineering.
-
-Run from the repository root:
-    python part_b/feature_engineering.py
-
-Inputs created by Part A:
-    data/processed/customers_clean.csv
-    data/processed/orders_clean.csv
-
-Outputs:
-    data/processed/part_b/customer_features.csv
-    data/processed/part_b/feature_engineering_report.json
-
-Creates one row per customer with numeric behaviour features for customer
-segmentation and, after the assignment's exact target definition is applied,
-churn prediction.
-
-This script intentionally does not invent a churn label.
-"""
-
 import json
 from pathlib import Path
 
