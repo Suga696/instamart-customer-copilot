@@ -1,4 +1,3 @@
-"""Analyse delivery and complaint patterns; do not infer causation."""
 import json
 from pathlib import Path
 import pandas as pd
