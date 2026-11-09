@@ -1,9 +1,12 @@
 import csv
 import json
 import sqlite3
+import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 DATABASE_PATH = PROJECT_ROOT / "data" / "database" / "instamart.db"
 POLICY_DIR = PROJECT_ROOT / "data" / "policies"
 RAW_DIR = PROJECT_ROOT / "data" / "raw"
