@@ -1,8 +1,3 @@
-"""Compare Logistic Regression and Random Forest for churn prediction.
-
-Uses earlier monthly snapshots for training and the latest snapshot as an
-out-of-time test set. All preprocessing is fitted within each model pipeline.
-"""
 import json
 from pathlib import Path
 
