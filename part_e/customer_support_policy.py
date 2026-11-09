@@ -1,4 +1,3 @@
-"""Generate support operations recommendations using actual routing outputs."""
 import json
 from pathlib import Path
 import pandas as pd
