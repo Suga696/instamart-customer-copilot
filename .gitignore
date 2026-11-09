@@ -218,3 +218,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Instamart generated data
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/database/*
+!data/database/.gitkeep
+
+data/reports/*
+!data/reports/.gitkeep
+
+# Trained machine learning models
+models/part_b/*
+!models/part_b/.gitkeep
+
+models/part_c/*
+!models/part_c/.gitkeep
+
+# Keep project source files and tests
