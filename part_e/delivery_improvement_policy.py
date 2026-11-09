@@ -1,4 +1,3 @@
-"""Generate delivery recommendations from observed city/hour patterns."""
 import json
 from pathlib import Path
 import pandas as pd
