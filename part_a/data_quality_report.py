@@ -1,30 +1,3 @@
-"""
-Part A - Consolidated data quality report.
-
-Run from the repository root, after generating data and completing Part A:
-    python part_a/data_quality_report.py
-
-Required inputs:
-    data/raw/customers.csv
-    data/raw/products.csv
-    data/raw/orders.csv
-    data/processed/customers_clean.csv
-    data/processed/products_clean.csv
-    data/processed/orders_clean.csv
-    data/processed/ingestion_report.json
-    data/processed/cleaning_report.json
-    data/processed/validation_report.json
-
-Outputs:
-    data/processed/data_quality_report.json
-    data/processed/data_quality_summary.csv
-
-The report consolidates the existing ingestion, cleaning and validation
-artifacts and independently calculates before/after row counts, missing
-values, exact duplicate rows and key-duplicate counts. It does not modify
-source data or replace the detailed validation checks.
-"""
-
 from __future__ import annotations
 
 import json
