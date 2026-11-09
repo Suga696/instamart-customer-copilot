@@ -1,4 +1,3 @@
-"""Translate anomaly-screening outputs into human-review policy guidance."""
 import json
 from pathlib import Path
 import pandas as pd
