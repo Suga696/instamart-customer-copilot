@@ -1,9 +1,3 @@
-"""Unit tests for Part B segmentation and churn helper functions.
-
-Run from the repository root:
-    python -m unittest tests.test_part_b -v
-"""
-
 import unittest
 from pathlib import Path
 import sys
