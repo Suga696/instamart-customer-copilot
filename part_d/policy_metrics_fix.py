@@ -1,4 +1,3 @@
-"""Recalculate policy abstention metrics from the persisted CSV using boolean-safe parsing."""
 import csv, json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
