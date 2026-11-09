@@ -1,24 +1,3 @@
-"""
-Part C - PII masking
---------------------
-Masks email addresses and common Indian mobile phone numbers in support-ticket
-free text before the text is sent to the supplied Mock LLM.
-
-Run from the repository root:
-    python part_c/pii_masking.py
-
-Input:
-    data/processed/part_c/cleaned_tickets.csv
-
-Outputs:
-    data/processed/part_c/pii_masked_tickets.csv
-    data/processed/part_c/pii_masking_report.json
-
-Only the free-text `text` column is masked. Ticket, customer and order IDs are
-preserved because later stages use them for joins and routing. Raw and cleaned
-input files are never overwritten.
-"""
-
 from __future__ import annotations
 
 import json
