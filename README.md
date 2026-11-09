@@ -12,22 +12,25 @@ recommendations, and an integrated HTML dashboard.
 
 ## Objectives
 
--   Ingest, clean, validate, and store customer, product, order, and
-    ticket data.
--   Engineer customer features and segment customers.
--   Build and compare churn prediction models.
--   Clean, mask, classify, and route support tickets.
--   Detect unusual order patterns with anomaly detection.
--   Retrieve policy information and evaluate answerability.
--   Generate retention, fraud prevention, delivery, and support
-    recommendations.
--   Consolidate project results in an HTML dashboard.
+Section	            What to include
+Project overview	Problem statement and objectives
+Technology stack	Python, pandas, NumPy, scikit-learn, joblib, SQLite
+Project structure	Complete folder structure
+Data generation	    Instructions to run generate_data.py
+Reproduce	        All execution commands in the correct order
+Part A findings	    Data cleaning, validation and quality results
+Part B findings	    Customer segmentation and churn model metrics
+Part C findings	    Ticket classification, routing and fraud analytics results
+Part D findings	    Policy retrieval, refund evaluation and NLP results
+Part E findings	    Retention, delivery, fraud prevention and support recommendations
+Business insights	Numerical findings and recommendations
+Limitations	        Synthetic data, derived churn labels and anomaly detection limitations
 
 ## Technology and constraints
 
--   Python 3.11+ and SQLite 3.25+.
+-   Python                    3.11+ and SQLite 3.25+.
 -   Permitted libraries only: Python standard library, `pandas`,
-    `numpy`, `scikit-learn`, and `joblib`.
+                              `numpy`, `scikit-learn`, and `joblib`.
 -   No Streamlit or additional third-party dependencies.
 -   Keep the supplied `generate_data.py` and `mock_llm.py` unchanged.
 -   The supplied mock LLM runs offline; no API key is required.
@@ -201,7 +204,9 @@ NLP/LLM report.
 The investigation assistant supports human review; it does not make
 final fraud determinations.
 
-Run fraud analytics after part D run
+
+### Generate fraud analytics
+    Run fraud analytics after part D run
 
 ### Part E --- Business policies and recommendations
 
@@ -278,43 +283,3 @@ python -m unittest discover -s tests -p "test_part_e.py" -v
 If a test requires generated data or reports, run the relevant project
 stages first.
 
-## Reproducibility and limitations
-
--   The dataset is synthetic and may not represent actual Instamart
-    customers or operations.
--   Churn is a derived 30-day inactivity proxy, not a supplied business
-    label.
--   Fraud detection is unsupervised anomaly detection; flagged records
-    require human investigation.
--   Policy retrieval and refund decisions are limited to the supplied
-    policy documents and synthetic scenarios.
--   PII masking is a demonstration, not a production-grade privacy
-    guarantee.
--   Performance on synthetic data does not establish expected real-world
-    model performance.
--   Recommendations should be validated against real operational
-    evidence before implementation.
-
-## GitHub submission notes
-
--   Include source code, tests, `README.md`, `requirements.txt`, and the
-    supplied generator and mock LLM files.
--   Keep the supplied `generate_data.py` and `mock_llm.py` unchanged.
--   Do not commit secrets, API keys, or real customer information.
--   Generated data, SQLite databases, reports, and model binaries can
-    generally be excluded if the assignment expects reproducible source
-    code rather than generated outputs. Follow the assignment's explicit
-    submission rules if they differ.
--   Keep the complete project in one repository on the required `main`
-    branch.
-
-## Quick-start checklist
-
-1.  Open or clone the repository.
-2.  Install dependencies from `requirements.txt`.
-3.  Run `python generate_data.py`.
-4.  Execute Parts A through E in order.
-5.  Build the dashboard.
-6.  Run the unit tests.
-7.  Verify the six final deliverables.
-8.  Commit and push the project source and README to GitHub.
