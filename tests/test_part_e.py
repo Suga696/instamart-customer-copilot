@@ -1,11 +1,3 @@
-"""Unit tests for the five Instamart Part E policy modules.
-
-Run from the repository root with:
-    python -m unittest discover -s tests -p 'test_part_e.py' -v
-
-Only Python's standard-library unittest/tempfile/pathlib modules and the
-project's already-permitted pandas dependency are used.
-"""
 import json
 import tempfile
 import unittest
