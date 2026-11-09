@@ -1,12 +1,3 @@
-"""Unit tests for Part C ticket cleaning, classification and routing.
-
-Run from the repository root:
-    python -m unittest tests.test_part_c -v
-
-These tests cover the modules currently in the project. PII masking should
-also be tested once part_c/pii_masking.py is added.
-"""
-
 import unittest
 from pathlib import Path
 import sys
