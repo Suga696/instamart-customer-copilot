@@ -1,4 +1,3 @@
-"""Unsupervised transaction anomaly screening; flags require human review."""
 import json
 from pathlib import Path
 import pandas as pd
