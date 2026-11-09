@@ -201,6 +201,8 @@ NLP/LLM report.
 The investigation assistant supports human review; it does not make
 final fraud determinations.
 
+Run fraud analytics after part D run
+
 ### Part E --- Business policies and recommendations
 
 ``` bash
