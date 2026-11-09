@@ -1,4 +1,3 @@
-"""Create evidence-linked retention recommendations from customer segments."""
 import json
 from pathlib import Path
 import pandas as pd
