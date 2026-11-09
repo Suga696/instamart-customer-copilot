@@ -1,9 +1,3 @@
-"""Unit tests for Part D policy retrieval and refund-agent tools.
-
-Run from the repository root:
-    python -m unittest tests.test_part_d -v
-"""
-
 import sqlite3
 import unittest
 from pathlib import Path
