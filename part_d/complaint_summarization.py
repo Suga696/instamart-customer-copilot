@@ -1,4 +1,3 @@
-"""Create evidence-based complaint summaries from classified support tickets."""
 import json
 from pathlib import Path
 import pandas as pd
