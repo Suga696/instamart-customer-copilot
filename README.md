@@ -149,7 +149,6 @@ produces a data-quality report.
 ``` bash
 python part_b/feature_engineering.py
 python part_b/segmentation.py
-python part_b/churn_prediction.py
 python part_b/churn_target.py
 python part_b/churn_model_comparison.py
 python part_b/customer_intelligence_report.py
@@ -173,7 +172,6 @@ python part_c/classification.py
 python part_c/routing.py
 python part_c/fraud_feature_engineering.py
 python part_c/fraud_detection.py
-python part_c/fraud_analytics.py
 ```
 
 Prepares support tickets, masks PII, classifies and routes tickets,
