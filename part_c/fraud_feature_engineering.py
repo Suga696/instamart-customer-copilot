@@ -1,4 +1,3 @@
-"""Build order-level behavioural indicators for anomaly screening."""
 import json
 from pathlib import Path
 import pandas as pd
