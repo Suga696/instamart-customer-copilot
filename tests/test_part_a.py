@@ -1,9 +1,3 @@
-"""Unit tests for Part A ingestion/cleaning/database foundations.
-
-Run from the repository root:
-    python -m unittest tests.test_part_a -v
-"""
-
 import sqlite3
 import unittest
 from pathlib import Path
