@@ -1,8 +1,3 @@
-"""Generate the consolidated Fraud Analytics Report.
-
-Run after fraud_detection.py and part_d/fraud_investigation_assistant.py.
-Uses only Python's standard library plus pandas (already permitted by the project).
-"""
 import json
 from pathlib import Path
 import pandas as pd
