@@ -1,4 +1,3 @@
-"""Create the consolidated Customer Intelligence Report."""
 import json
 from pathlib import Path
 
