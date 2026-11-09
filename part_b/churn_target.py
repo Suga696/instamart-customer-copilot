@@ -1,12 +1,3 @@
-"""Build leakage-aware customer snapshots and a 30-day churn target.
-
-Definition used here:
-A customer is labelled churn=1 at snapshot date D when they place no order
-in the next 30 days (D, D+30 days]. Features use orders on or before D.
-
-This is an operational definition for the synthetic dataset, not a supplied
-ground-truth churn label.
-"""
 import json
 from pathlib import Path
 
